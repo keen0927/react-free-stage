@@ -1,25 +1,12 @@
-import React, { Component } from 'react'
-import TodoForm from './TodoForm';
+import React from 'react'
+import Effect from './components/effect'
 
-export class App extends Component {
-
-  state = {
-    todos: []
-  }
-
-  addTodo = (todo) => {
-    
-    this.setState({
-      todos: [todo, ...this.state.todos]
-    })
-  }
-  render() {
-    return (
-      <div>
-        <TodoForm onSubmit={this.addTodo} />
-      </div>
-    )
-  }
+const App = () => {
+  return (
+    <div>
+      <Effect />
+    </div>
+  )
 }
 
 export default App
